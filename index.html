@@ -27,8 +27,7 @@
 </head>
 <body>
 
-<header role="banner" id="top" class="navbar navbar-static-top">
-  <div class="container">
+<header role="banner" id="top" class="navbar navbar-fixed-top sticky">
     <div class="navbar-header">
       <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
         <span class="sr-only">Toggle navigation</span>
@@ -45,22 +44,17 @@
         <li><a href="#section3" data-menu-top="2000">Contact</a></li>
       </ul>
     </nav>
-  </div>
 </header>
 
 <div class="container">
-  <section id="intro">
-    <div id="easing_wrapper">
+  <section id="intro" class="row">
     <div id="easing" data-0="left:100%" data-300="left:15%;">
-			<h2>My name is Panu</h2>
+			<h1>My name is Panu</h1>
 			<p data-0="opacity:0;font-size:100%;" data-3000="opacity:1;font-size:150%;">I am a full stack web developer living in Silicon Valley. I eat HTML for breakfast, JAVASCRIPT for lunch, and RUBY for dinner.</p>
 		</div>
-  </div>
-  <div id="easing_wrapper">
     <div id="easing" data-0="right:100%" data-300="right:-40%;">
-      <img class="iphone-cover" data-0="transform[bounce]:rotate(0deg);" data-300="transform[bounce]:rotate(360deg);" src="images/iphone-white.png" />
+      <img class="iphone-cover" data-0="transform:rotate(0deg);" data-300="transform:rotate(360deg);" src="images/iphone-white.png" />
     </div>
-  </div>
   </section>
 
 
