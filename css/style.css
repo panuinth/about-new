@@ -210,48 +210,59 @@ h4 {
   #introduction p.welcome{margin-bottom:50px;}
   #introduction p.motto-first{margin-top:50px;margin-bottom:0;}
   #introduction p.motto-second{margin-top:10px;}
+  #introduction .scroll-icon{padding-top:150px;}
+  #introduction .scroll-icon i{font-size:200px;}
 }
 
 /* Small desktop */
 @media (min-width: 993px) and (max-width: 1199px){
-  #introduction h1{font-size:80px;width:230px;}
-  #introduction p{font-size:25px;}
+  #introduction h1{font-size:60px;width:230px;}
+  #introduction p{font-size:20px;}
   #introduction  .iphone-cover{width:90%;}
   #introduction p.welcome{margin-bottom:50px;}
   #introduction p.motto-first{margin-top:50px;margin-bottom:0;}
   #introduction p.motto-second{margin-top:10px;}
+  #introduction .scroll-icon{padding-top:120px;}
+  #introduction .scroll-icon i{font-size:200px;}
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 992px){
-  #introduction h1{font-size:80px;width:230px;}
-  #introduction p{font-size:25px;}
+  #introduction h1{font-size:60px;width:230px;}
+  #introduction p{font-size:20px;}
   #introduction .iphone-cover{width:90%;}
   #introduction p.welcome{margin-bottom:50px;}
   #introduction p.motto-first{margin-top:50px;margin-bottom:0;}
   #introduction p.motto-second{margin-top:10px;}
+  #introduction .scroll-icon{padding-top:120px;}
+  #introduction .scroll-icon i{font-size:200px;}
 }
 
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px){
-  #introduction h1{font-size:80px;width:230px;}
-  #introduction p{font-size:25px;}
+  #introduction h1{font-size:60px;width:230px;}
+  #introduction p{font-size:20px;}
   #introduction .iphone-cover{width:90%;}
   #introduction p.welcome{margin-bottom:50px;}
   #introduction p.motto-first{margin-top:50px;margin-bottom:0;}
   #introduction p.motto-second{margin-top:10px;}
+  #introduction .scroll-icon{padding-top:120px;}
+  #introduction .scroll-icon i{font-size:200px;}
 }
 
 
 /* Landscape phones and down */
 @media (max-width: 480px){
-  #introduction h1{font-size:30px;width:100px;}
-  #introduction p{font-size:15px;}
+  #introduction h1{font-size:25px;width:90px;}
+  #introduction p{font-size:12px;}
   #introduction .iphone-cover{width:400%;right:15px;top:40px;}
-  #introduction p.welcome{margin-bottom:30px;}
-  #introduction p.motto-first{margin-top:30px;margin-bottom:0;}
+  #introduction p.welcome{margin-bottom:20px;}
+  #introduction p.motto-first{margin-top:20px;margin-bottom:0;}
   #introduction p.motto-second{margin-top:5px;}
+  #introduction .scroll-icon{padding-top:100px;}
+  #introduction .scroll-icon i{font-size:120px;}
+
 }
 
 
@@ -259,4 +270,6 @@ section#introduction{background:#3da1c6;height:10000px;}
 .iphone-cover{display: block; height: auto; max-width: 100%;}
 #introduction h1{border:1px solid #fff;color:#fff;padding:5px 10px;text-align:center;}
 #introduction p{color:#fff;font-weight:200;}
+#introduction .scroll-title{margin-top:0;text-align:center;font-size:70px;}
+#introduction .scroll-icon{text-align:center;margin-top:0;}
 

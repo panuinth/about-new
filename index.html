@@ -6,26 +6,30 @@
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>skrollr - parallax scrolling for the masses</title>
+	<title>Panu - I am a full stack web developer living in San Francisco. I eat HTML for breakfast, JAVASCRIPT for lunch, and RUBY for dinner.</title>
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
+	<div id="progress" data-0="width:0%;background:hsl(360, 100%, 100%);" data-end="width:100%;background:hsl(360, 100%, 100%);"></div>
 
   <section id="introduction" class="">
-    <div id="easing" data-0="top:100%;left:100%" data-300="top:20%;left:5%;">
+    <p class="scroll-icon"><i class="fa fa-angle-double-down fa-4"></i></p>
+    <p class="scroll-title">Scroll down</p>
+
+    <div id="easing" data-500="top:100%;" data-1000="top:20%;left:5%;">
       <p class="welcome">Welcome to the official site of</p>
       <h1>PANU</h1>
       <p class="motto-first">I am a full stack web developer living in San Francisco.</p>
       <p class="motto-second">I eat HTML for breakfast, JAVASCRIPT for lunch, and RUBY for dinner.</p>
 		</div>
-    <div id="easing" data-0="right:100%" data-300="right:-5%;top:0%">
-      <img class="iphone-cover" data-0="transform:rotate(0deg);" data-300="transform:rotate(360deg);" src="images/iphone-white-panu.png" />
+    <div id="easing" data-100="right:100%" data-500="right:-5%;top:10%">
+      <img class="iphone-cover" data-100="transform:rotate(0deg);" data-500="transform:rotate(360deg);" src="images/iphone-white-panu.png" />
     </div>
   </section>
 
