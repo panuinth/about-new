@@ -1,76 +1,85 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]>     <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9 ]>        <html class="no-js ie9 lt-ie10"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js lt-ie100"> <!--<![endif]-->
+<html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>About Panu</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="utf-8">
 
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/fixed-positioning.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+	<title>skrollr - parallax scrolling for the masses</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
 
-<header role="banner" id="top" class="navbar navbar-fixed-top sticky">
-    <div class="navbar-header">
-      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="../">Panu.in.th</a>
-    </div>
-    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
-      <ul class="nav navbar-nav pull-right">
-        <li><a href="#section1" data-menu-top="0">Profile</a></li>
-        <li><a href="#section2" data-menu-top="1000">Experience</a></li>
-        <li><a href="#section3" data-menu-top="2000">Contact</a></li>
-      </ul>
-    </nav>
-</header>
+	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
 
-<div class="container">
-  <section id="intro" class="row">
-    <div id="easing" data-0="left:100%" data-300="left:15%;">
-			<h1>My name is Panu</h1>
-			<p data-0="opacity:0;font-size:100%;" data-3000="opacity:1;font-size:150%;">I am a full stack web developer living in Silicon Valley. I eat HTML for breakfast, JAVASCRIPT for lunch, and RUBY for dinner.</p>
+  <section id="introduction" class="">
+    <div id="easing" data-0="top:100%;left:100%" data-300="top:20%;left:5%;">
+      <p class="welcome">Welcome to the official site of</p>
+      <h1>PANU</h1>
+      <p class="motto-first">I am a full stack web developer living in San Francisco.</p>
+      <p class="motto-second">I eat HTML for breakfast, JAVASCRIPT for lunch, and RUBY for dinner.</p>
 		</div>
-    <div id="easing" data-0="right:100%" data-300="right:-40%;">
-      <img class="iphone-cover" data-0="transform:rotate(0deg);" data-300="transform:rotate(360deg);" src="images/iphone-white.png" />
+    <div id="easing" data-0="right:100%" data-300="right:-5%;top:0%">
+      <img class="iphone-cover" data-0="transform:rotate(0deg);" data-300="transform:rotate(360deg);" src="images/iphone-white-panu.png" />
     </div>
   </section>
 
+	<div id="properties" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
+		<h2>all numeric properties</h2>
+		<p>width, height, padding, font-size, z-index, blah blah blah</p>
+	</div>
 
-</div><!--end <div class="container"> -->
+	<div id="easing_wrapper" data-0="display:none;" data-3900="display:block;" data-4900="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-5900="background:rgba(0,0,0,1);color:rgb(255,255,255);" data-10000="top:0%;" data-12000="top:-100%;">
+		<div id="easing" data-3900="left:100%" data-4600="left:25%;">
+			<h2>easing?</h2>
+			<p>sure.</p>
+			<p>let me dim the <span data-3900="" data-4900="color[swing]:rgb(0,0,0);" data-5900="color:rgb(255,255,0);">lights</span> for this one...</p>
+			<p data-5900="opacity:0;font-size:100%;" data-6500="opacity:1;font-size:150%;">you can set easings for each property and define own easing functions</p>
+		</div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+		<div class="drop" data-6500="left:15%;bottom:100%;" data-9500="bottom:0%;">linear</div>
+		<div class="drop" data-6500="left:25%;bottom[quadratic]:100%;" data-9500="bottom:0%;">quadratic</div>
+		<div class="drop" data-6500="left:35%;bottom[cubic]:100%;" data-9500="bottom:0%;">cubic</div>
+		<div class="drop" data-6500="left:45%;bottom[swing]:100%;" data-9500="bottom:0%;">swing</div>
+		<div class="drop" data-6500="left:55%;bottom[WTF]:100%;" data-9500="bottom:0%;">WTF</div>
+		<div class="drop" data-6500="left:65%;bottom[inverted]:100%;" data-9500="bottom:0%;">inverted</div>
+		<div class="drop" data-6500="left:75%;bottom[bounce]:100%;" data-9500="bottom:0%;">bounce</div>
+	</div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<!--<script src="js/jquery.imageScroll.js"></script>-->
-<script type="text/javascript" src="js/skrollr.min.js"></script>
-<script type="text/javascript" src="js/skrollr.menu.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+	<div id="download" data-10000="top[cubic]:100%;border-radius[cubic]:0em;background:rgb(0,50,100);border-width:0px;" data-12000="top:10%;border-radius:2em;background:rgb(190,230,255);border-width:10px;">
+		<h2>the end</h2>
+		<p>by the way, you can also animate colors (you did notice this, didn't you?)</p>
+		<p><strong>Now get this thing on <a href="https://github.com/Prinzhorn/skrollr">GitHub</a> and spread the word, it's open source!</strong> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://prinzhorn.github.com/skrollr/" data-via="Prinzhorn">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+		<p>Check out more <a href="https://github.com/Prinzhorn/skrollr/tree/master/examples#examples">examples</a>.</p>
+		<p>Handcrafted by <a href="https://twitter.com/Prinzhorn" class="twitter-follow-button" data-show-count="false">Follow @Prinzhorn</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+	</div>
 
+	<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
+  <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/skrollr.min.js"></script>
 
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="dist/skrollr.ie.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
 </body>
+
 </html>
